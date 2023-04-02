@@ -117,7 +117,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div className={styles.navContainer}>
-          <Logo alt='blue_logo' />
+          <Logo className={styles.logo} alt='blue_logo' />
           <div className={styles.leftNav}>
             <div className={styles.nav}>
               <ul>
