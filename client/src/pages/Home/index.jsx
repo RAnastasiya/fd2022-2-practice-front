@@ -9,6 +9,7 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import Advantage from '../../components/Advantage';
+import CollectionNames from '../../components/CollectionNames';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -38,6 +39,7 @@ const Home = props => {
       ) : (
         <>
           <div className={styles.container}>
+            <CollectionNames />
             <div className={styles.headerBar}>
               <div className={styles.headline}>
                 <span>Find the Perfect Name for</span>
