@@ -50,3 +50,21 @@
             p
                 margin-right: 10px
 
+
+@mixin underline
+    position: relative
+    &:after
+        position: absolute
+        content: ''
+        height: 3px
+        bottom: -30px
+        margin: 0 auto
+        left: 0
+        right: 0
+        width: 100px
+
+.blueUnderline
+    @include underline
+
+    &:after
+        background: #455A89
