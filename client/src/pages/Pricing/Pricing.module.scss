@@ -17,14 +17,14 @@
         .BoxContainer {
             opacity: 1;
             cursor: pointer;
+            border: none;
             .TopBox {
-                border: 10px solid #eee;
+                border: 10px solid;
                 padding: 16px;
                 margin-bottom: 15px;
                 display: inline-block;
                 width: 100%;
                 min-height: 215px;
-                background-color: #fff;
                 opacity: .9;
                 box-sizing: border-box;
                 .Title {
@@ -50,6 +50,9 @@
                     float: right;
                     font-size: 28px;
                     font-weight: 600;
+                }
+                i {
+                    display: none;
                 }
             }
             .List {
@@ -105,6 +108,66 @@
             &:hover {
                 .TopBox {
                     box-shadow: 0 15px 15px #8f8f8f;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        .BoxPrice {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            .BoxContainer {
+                border: 5px solid;
+                .TopBox {
+                    border: none;
+                    min-height: auto;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 15px;
+                    margin-bottom: 0;
+                    .Description {
+                        display: none;
+                    }
+                    .Price {
+                        width: auto;
+                        margin-left: 8px;
+                        flex-grow: 1;
+                        text-align: left;
+                    }
+                    .Price, .Title {
+                        font-size: 25px;
+                        padding: 10px 0;
+                        font-weight: 700;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                    i {
+                        display: inline-block;
+                    }
+                }
+                .List {
+                    border-top: 1px solid #ddd;
+                    padding: 5px 15px 0;
+                    li {
+                        &:last-child {
+                            border-bottom: 2px solid #ddd;
+                        }
+                    }
+                }
+                .Button {
+                    margin: 13px 15px 18px;
+                }
+                .Hide {
+                    display: none;
+                }
+                &:hover {
+                    .TopBox {
+                        box-shadow: none;
+                    }
                 }
             }
         }
