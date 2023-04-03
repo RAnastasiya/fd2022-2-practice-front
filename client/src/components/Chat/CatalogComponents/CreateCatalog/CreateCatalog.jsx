@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Formik, Form } from 'formik';
-import FormInput from '../../../Forms/FormInput/FormInput';
+import Index from '../../../Forms/InputComponents/FormInput';
 import styles from './CreateCatalog.module.sass';
 import { createCatalog } from '../../../../store/slices/chatSlice';
 import Schems from '../../../../utils/validators/validationSchems';
@@ -19,7 +19,7 @@ const CreateCatalog = props => {
       validationSchema={Schems.CatalogSchema}
     >
       <Form className={styles.form}>
-        <FormInput
+        <Index
           name='catalogName'
           type='text'
           label='name of catalog'

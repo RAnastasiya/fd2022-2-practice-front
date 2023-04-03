@@ -1,7 +1,7 @@
 import React from 'react';
 import CONSTANTS from '../../constants';
-import SelectInput from '../Forms/SelectInput/SelectInput';
-import FormInput from '../Forms/FormInput/FormInput';
+import SelectInput from '../Forms/SelectInput';
+import Index from '../Forms/InputComponents/FormInput';
 import styles from '../Forms/ContestForm/ContestForm.module.sass';
 import Spinner from '../Spinner/Spinner';
 
@@ -45,7 +45,7 @@ const OptionalSelects = props => {
             <span className={styles.inputHeader}>
               What name of your venture?
             </span>
-            <FormInput
+            <Index
               name='nameVenture'
               type='text'
               label='name of venture'
@@ -77,7 +77,7 @@ const OptionalSelects = props => {
             <span className={styles.inputHeader}>
               What name of your venture?
             </span>
-            <FormInput
+            <Index
               name='nameVenture'
               type='text'
               label='name of venture'

@@ -5,7 +5,7 @@ import 'react-credit-cards/es/styles-compiled.css';
 import { connect } from 'react-redux';
 import styles from './PayForm.module.sass';
 import { changeFocusOnCard } from '../../../store/slices/paymentSlice';
-import PayInput from '../InputComponents/PayInput/PayInput';
+import PayInput from '../InputComponents/PayInput';
 import Schems from '../../../utils/validators/validationSchems';
 
 const PayForm = props => {

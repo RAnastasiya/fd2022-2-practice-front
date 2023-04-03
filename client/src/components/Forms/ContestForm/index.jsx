@@ -6,10 +6,10 @@ import CONSTANTS from '../../../constants';
 import { getDataForContest } from '../../../store/slices/dataForContestSlice';
 import styles from './ContestForm.module.sass';
 import Spinner from '../../Spinner/Spinner';
-import FormInput from '../FormInput/FormInput';
-import SelectInput from '../SelectInput/SelectInput';
-import FieldFileInput from '../InputComponents/FieldFileInput/FieldFileInput';
-import FormTextArea from '../InputComponents/FormTextArea/FormTextArea';
+import Index from '../InputComponents/FormInput';
+import SelectInput from '../SelectInput';
+import FieldFileInput from '../InputComponents/FieldFileInput';
+import FormTextArea from '../InputComponents/FormTextArea';
 import TryAgain from '../../TryAgain/TryAgain';
 import Schems from '../../../utils/validators/validationSchems';
 import OptionalSelects from '../../OptionalSelects/OptionalSelects';
@@ -86,7 +86,7 @@ class ContestForm extends React.Component {
             <Form>
               <div className={styles.inputContainer}>
                 <span className={styles.inputHeader}>Title of contest</span>
-                <FormInput
+                <Index
                   name='title'
                   type='text'
                   label='Title'

@@ -7,7 +7,7 @@ import {
   changeCatalogName,
 } from '../../../../store/slices/chatSlice';
 import styles from './CatalogHeader.module.sass';
-import FormInput from '../../../Forms/FormInput/FormInput';
+import Index from '../../../Forms/InputComponents/FormInput';
 import Schems from '../../../../utils/validators/validationSchems';
 
 const CatalogListHeader = props => {
@@ -44,7 +44,7 @@ const CatalogListHeader = props => {
             validationSchema={Schems.CatalogSchema}
           >
             <Form>
-              <FormInput
+              <Index
                 name='catalogName'
                 classes={{
                   container: styles.inputContainer,

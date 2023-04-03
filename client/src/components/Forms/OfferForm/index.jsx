@@ -7,12 +7,12 @@ import {
   clearAddOfferError,
 } from '../../../store/slices/contestByIdSlice';
 import styles from './OfferForm.module.sass';
-import ImageUpload from '../InputComponents/ImageUpload/ImageUpload';
-import FormInput from '../FormInput/FormInput';
+import ImageUpload from '../InputComponents/ImageUpload';
+import Index from '../InputComponents/FormInput';
 import Schems from '../../../utils/validators/validationSchems';
 import Error from '../../Error/Error';
 
-const OfferForm = props => {
+const OfferForm = (props) => {
   const renderOfferInput = () => {
     if (props.contestType === CONTANTS.LOGO_CONTEST) {
       return (
@@ -27,7 +27,7 @@ const OfferForm = props => {
       );
     }
     return (
-      <FormInput
+      <Index
         name='offerData'
         classes={{
           container: styles.inputContainer,
