@@ -1,0 +1,204 @@
+.Container {
+    width: 100%;
+    padding: 60px 15px;
+    margin: 0 auto;
+    font-family: 'Raleway',sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    .BoxPrice {
+        width: 25%;
+        max-width: 292px;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        .BoxContainer {
+            opacity: 1;
+            cursor: pointer;
+            border: none;
+            .TopBox {
+                border: 10px solid;
+                padding: 16px;
+                margin-bottom: 15px;
+                display: inline-block;
+                width: 100%;
+                min-height: 215px;
+                opacity: .9;
+                box-sizing: border-box;
+                .Title {
+                    font-size: 33px;
+                    margin-top: 0;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                }
+                .Description {
+                    color: #666;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: left;
+                    min-height: 75px;
+                    margin: 0;
+                    padding: 0;
+                }
+                .Price {
+                    font-family: 'Raleway',sans-serif;
+                    text-align: right;
+                    width: 100%;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+                i {
+                    display: none;
+                }
+            }
+            .List {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .ItemCheck {
+                    font-weight: 500;
+                    padding: 13px 0 2px 15px;
+                    font-size: 13px;
+                    i {
+                        margin-right: 4px;
+                    }
+                    &.ItemCheckBorder {
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid #ddd;
+                    }
+                }
+                .Item {
+                    font-size: 15px;
+                    font-weight: 500;
+                    padding: 13px 0;
+                    &.ItemBorder {
+                        border-bottom: 2px solid #ddd;
+                    }
+                    p {
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-align: left;
+                        margin: 0 0 10px;
+                        &:last-child {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+            .Button {
+                display: block;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 45px;
+                text-decoration: none;
+                color: #fff;
+                border: 2px solid #ddd;
+                border-radius: 5px;
+                text-align: center;
+                padding: 0;
+                box-sizing: border-box;
+                i {
+                    margin-right: 6px;
+                }
+            }
+            &:hover {
+                .TopBox {
+                    box-shadow: 0 15px 15px #8f8f8f;
+                }
+            }
+        }
+    }
+    .Tooltip {
+        max-width: 200px;
+        z-index: 999;
+        padding: 8px 14px;
+        margin: 0;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #ebebeb;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: start;
+        text-decoration: none;
+        text-shadow: none;
+        text-transform: none;
+        letter-spacing: normal;
+        word-break: normal;
+        word-spacing: normal;
+        word-wrap: normal;
+        white-space: normal;
+        line-break: auto;
+        color: #666;
+    }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        .BoxPrice {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            .BoxContainer {
+                border: 5px solid;
+                .TopBox {
+                    border: none;
+                    min-height: auto;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 15px;
+                    margin-bottom: 0;
+                    .Description {
+                        display: none;
+                    }
+                    .Price {
+                        width: auto;
+                        margin-left: 8px;
+                        flex-grow: 1;
+                        text-align: left;
+                    }
+                    .Price, .Title {
+                        font-size: 25px;
+                        padding: 10px 0;
+                        font-weight: 700;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+                    i {
+                        display: inline-block;
+                    }
+                }
+                .List {
+                    border-top: 1px solid #ddd;
+                    padding: 5px 15px 0;
+                    li {
+                        &:last-child {
+                            border-bottom: 2px solid #ddd;
+                        }
+                    }
+                }
+                .Button {
+                    margin: 13px 15px 18px;
+                }
+                .Hide {
+                    display: none;
+                }
+                &:hover {
+                    .TopBox {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .Tooltip {
+            display: none;
+        }
+    }
+}
