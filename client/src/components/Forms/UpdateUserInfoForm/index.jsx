@@ -1,14 +1,14 @@
 import React from 'react';
 import { Form, Formik } from 'formik';
 import { connect } from 'react-redux';
-import { clearUserError } from '../../store/slices/userSlice';
+import { clearUserError } from '../../../store/slices/userSlice';
 import styles from './UpdateUserInfoForm.module.sass';
-import ImageUpload from '../InputComponents/ImageUpload/ImageUpload';
-import FormInput from '../FormInput/FormInput';
-import Schems from '../../utils/validators/validationSchems';
-import Error from '../Error/Error';
+import ImageUpload from '../InputComponents/ImageUpload';
+import Index from '../InputComponents/FormInput';
+import Schems from '../../../utils/validators/validationSchems';
+import Error from '../../Error/Error';
 
-const UpdateUserInfoForm = props => {
+const UpdateUserInfoForm = (props) => {
   const { onSubmit, submitting, error, clearUserError } = props;
   return (
     <Formik
@@ -26,7 +26,7 @@ const UpdateUserInfoForm = props => {
         )}
         <div className={styles.container}>
           <span className={styles.label}>First Name</span>
-          <FormInput
+          <Index
             name='firstName'
             type='text'
             label='First Name'
@@ -40,7 +40,7 @@ const UpdateUserInfoForm = props => {
         </div>
         <div className={styles.container}>
           <span className={styles.label}>Last Name</span>
-          <FormInput
+          <Index
             name='lastName'
             type='text'
             label='LastName'
@@ -54,7 +54,7 @@ const UpdateUserInfoForm = props => {
         </div>
         <div className={styles.container}>
           <span className={styles.label}>Display Name</span>
-          <FormInput
+          <Index
             name='displayName'
             type='text'
             label='Display Name'

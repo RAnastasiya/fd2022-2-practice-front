@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Form, Formik } from 'formik';
-import { checkAuth, clearAuth } from '../../store/slices/authSlice';
+import { checkAuth, clearAuth } from '../../../store/slices/authSlice';
 import styles from './LoginForm.module.sass';
-import FormInput from '../FormInput/FormInput';
-import Schems from '../../utils/validators/validationSchems';
-import Error from '../Error/Error';
-import CONSTANTS from '../../constants';
+import Index from '../InputComponents/FormInput';
+import Schems from '../../../utils/validators/validationSchems';
+import Error from '../../Error/Error';
+import CONSTANTS from '../../../constants';
 
 class LoginForm extends React.Component {
   componentWillUnmount () {
@@ -48,13 +48,13 @@ class LoginForm extends React.Component {
           validationSchema={Schems.LoginSchem}
         >
           <Form>
-            <FormInput
+            <Index
               classes={formInputClasses}
               name='email'
               type='text'
               label='Email Address'
             />
-            <FormInput
+            <Index
               classes={formInputClasses}
               name='password'
               type='password'
