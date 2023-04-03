@@ -1,0 +1,149 @@
+[
+    {
+      "name": "bronze",
+      "description": "Branding on a budget",
+      "price": "US$299",
+      "list": [
+        {
+          "text":  "Expected 100+ Entries",
+          "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price.",
+          "border": true
+        },
+        {
+          "text":  "Expected 100+ Entries",
+          "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+        }
+      ],
+      "href": "/start-contest?type=3&step=2",
+      "color": "#e0b48d"
+    },
+    {
+      "name": "gold",
+      "description": "Increase participation and basic brand validation",
+      "price": "US$449",
+      "list": [
+        {
+          "text": "Prize to Winner - $200 (Included)",
+          "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price.",
+          "border": true
+        },
+        {
+          "text": "Validation Services & Upgrades ($266 value)",
+          "tooltip": "tooltip"
+        },
+        {
+          "text": "Instant Trademark Check (One Database)",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "NDA and More Privacy",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "Project Promotion (Basic)",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "Comprehensive Trademark Research",
+          "tooltip": "tooltip",
+          "check": true,
+          "border": true
+        },
+        {
+          "text": "Expected 200+ Entries",
+          "tooltip": "tooltip",
+          "border": true
+        },
+        {
+          "text": "Partial Refund Option",
+          "tooltip": "tooltip"
+        }
+      ],
+      "href": "/start-contest?type=3&step=2",
+      "color": "#e8b954"
+    },
+    {
+      "name": "platinum",
+      "description": "Work with top-level creatives, plus agency-style brand validation",
+      "price": "US$749",
+      "list": [
+        {
+          "text": "Prize to Winner - $300 (Included)",
+          "tooltip": "tooltip",
+          "border": true
+        },
+        {
+          "text": "Validation Services & Upgrades ($940 value)\n",
+          "tooltip": "tooltip"
+        },
+        {
+          "text": "Instant Trademark Check (One Database)",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "Instant Trademark Check (One Database)",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "Instant Trademark Check (One Database)",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "Instant Trademark Check (One Database)",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "NDA and More Privacy",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "Project Promotion (Basic)",
+          "tooltip": "tooltip",
+          "check": true
+        },
+        {
+          "text": "Comprehensive Trademark Research",
+          "tooltip": "tooltip",
+          "check": true,
+          "border": true
+        },
+        {
+          "text": "Expected 400+ Entries",
+          "tooltip": "tooltip",
+          "border": true
+        },
+        {
+          "text": "Partial Refund Option",
+          "tooltip": "tooltip"
+        }
+      ],
+
+      "href": "/start-contest?type=3&step=2",
+      "color": "#555"
+    },
+    {
+      "name": "managed",
+      "description": "A full agency experience without the agency price tag",
+      "price": "US$1499",
+      "list": [
+        {
+          "text": [
+            "Receive optimum results from your Platinum Contest by launching a Managed Contest Package and working one-on-one with an experienced Squadhelp Branding Consultant.",
+            "With significantly more validation services, professional brief creation, and daily management of your contest by your Branding Expert, you'll receive an enhanced branding experience to closeout your branding project.",
+            "Learn More about Managed Contest Service"
+          ],
+          "tooltip": ""
+        }
+      ],
+      "href": "/start-contest?type=3&step=2",
+      "color": "#28d2d0"
+    }
+]
