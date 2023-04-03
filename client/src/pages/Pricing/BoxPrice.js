@@ -24,27 +24,25 @@ const BoxPrice = (
         }
       </div>
       <ul className={`${styles.List} ${show !== index && styles.Hide}`}>
-        {list.map(({ text, check, border, tooltip }, index) => {
-          return (
-            <li key={index}
-                id={name+index}
-                className={
-                  check
-                    ? `${styles.ItemCheck} ${border && styles.ItemCheckBorder}`
-                    : `${styles.Item} ${border && styles.ItemBorder}`
-                }>
-              {check && <i className='fas fa-check' />}
-              {typeof text === 'string'
-                ? text
-                : text.map((item, i) => <p key={'text'+i}>{item}</p>)
-              }
-              <ReactTooltip anchorId={name+index}
-                            place="right"
-                            className={styles.Tooltip}
-                            content={tooltip} />
-            </li>
-          )
-        })}
+        {list.map(({ text, check, border, tooltip }, index) => (
+          <li key={index}
+              id={name+index}
+              className={
+                check
+                  ? `${styles.ItemCheck} ${border && styles.ItemCheckBorder}`
+                  : `${styles.Item} ${border && styles.ItemBorder}`
+              }>
+            {check && <i className='fas fa-check' />}
+            {typeof text === 'string'
+              ? text
+              : text.map((item, i) => <p key={'text'+i}>{item}</p>)
+            }
+            <ReactTooltip anchorId={name+index}
+                          place="right"
+                          className={styles.Tooltip}
+                          content={tooltip} />
+          </li>
+        ))}
       </ul>
       <Link className={`${styles.Button} ${show !== index && styles.Hide}`}
             style={{ backgroundColor: color }}
